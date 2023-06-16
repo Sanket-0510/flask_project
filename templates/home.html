@@ -42,8 +42,8 @@
       </p>
     </div class="job-openings">
     <h3>Job openings</h3>
-    <div>CARD1</div>
-    <div>CARD2</div>
-    <div>CARD3</div>
+      {%for job in jobs%}
+       {% include 'jobItem.html' %}
+      {%endfor%}
   </body>
 </html>
